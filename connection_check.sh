@@ -1,6 +1,13 @@
 #!/bin/sh
 
-while 1; do
+frequency=1
+
+#how often to check (seconds)
+if [ $# == 1 ]; then
+	frequency=$1
+fi
+
+while true; do
     status=$(curl -s -o /dev/null -w "%{http_code}" http://www.google.com/)
     time=$(date "+%Y-%m-%d %H:%M:%S")
     meta="OK"
@@ -8,5 +15,5 @@ while 1; do
         meta="ERROR"
     fi
     printf "$time -> $status ($meta)\n"
-    sleep 1
+    sleep $frequency
 done
