@@ -1,0 +1,9 @@
+#!/bin/bash
+
+find . -name "package.json" ! -wholename "*node_modules*" -print0 | while IFS= read -r -d '' file; do 
+	dir=$(dirname "$file")
+	cd $dir
+	echo "Installing node modules in $PWD"
+	npm install
+	cd -
+done
