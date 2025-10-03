@@ -1,3 +1,7 @@
 *.exe
 *.log
+
+bin/
+personal/
+
 company/

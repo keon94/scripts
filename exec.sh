@@ -1,0 +1,15 @@
+curl 'https://github.com/apache/incubator-devlake/issues/2443' \
+  -H 'authority: github.com' \
+  -H 'application/json' \
+  -H 'accept-language: en' \
+  -H 'cookie: user_session=pYTdpyhoUO3TgUXd5HISRlV-gOenNv-rKIAr2hthZZVVm7VX; __Host-user_session_same_site=pYTdpyhoUO3TgUXd5HISRlV-gOenNv-rKIAr2hthZZVVm7VX; logged_in=yes; dotcom_user=keon94; _octo=GH1.1.58457398.1654637405; _device_id=e665bdae86032b8bbce07a5afa43b44d; color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; preferred_color_mode=light; tz=America%2FChicago; has_recent_activity=1; _gh_sess=%2BLDZOkBUorO%2BSMSGXnIY6KybaVTY9YEbaMMhMdTWRuSx2GpYGD4SufuQLZQP7I3tVnpO3eyoXE6bj8ABevPIsZPLTsBZwtv8uGvpmXlQQe8%2FZWl0bJSJE7rKTNbfyEWwMvEbf7DvmpmZHYP3Jf6VxoKyqmRUjqDkerKO4FbVprX0g3v%2BOYoO1EoBGOFN0fhdpVbU2Q%3D%3D--HmbSQdzgiNkNOYnA--fEfdoMNlw1P3gapCd8e5AQ%3D%3D' \
+  -H 'dnt: 1' \
+  -H 'referer: https://github.com/apache/incubator-devlake/issues' \
+  -H 'sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'turbo-frame: repo-content-turbo-frame' \
+  --compressed

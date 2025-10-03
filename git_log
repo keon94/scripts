@@ -1,0 +1,5 @@
+#!/bin/sh
+! git log --oneline HEAD~1... \
+    | LC_ALL=en_US.utf8 grep -vP '^\w{8} Merge ' \
+    | LC_ALL=en_US.utf8 grep -vP '^\w{8} (feat|fix|build|chore|docs|style|refactor|perf|test|ci)(\(\w+\))?: \w'
+echo "returned status $?"
